@@ -1,0 +1,13 @@
+version: '3.7'
+
+services:
+  python3:
+    restart: always
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    working_dir: '/root/work'
+    tty: true
+    volumes:
+      - ./src:/root/work/src
+      - ./data:/root/work/data
