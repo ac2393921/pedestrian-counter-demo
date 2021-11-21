@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+import os
 import time
 
 
@@ -12,6 +13,9 @@ DATA_PATH = '../data/'
 
 def main():
     start_time = time.time()
+
+    if not os.path.exists(f'{DATA_PATH}output'):
+        os.makedirs(f'{DATA_PATH}output')
 
     tracking_list = read_tracking(f'{DATA_PATH}tracking/demo.txt')
     baseline = read_baseline(f'{DATA_PATH}csv/baseline.csv')
