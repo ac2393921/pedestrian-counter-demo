@@ -7,7 +7,6 @@ import time
 from utils import PedestrianCounter, read_tracking, read_baseline
 
 
-ALPHA = 0.2
 DATA_PATH = '../data/'
 
 
