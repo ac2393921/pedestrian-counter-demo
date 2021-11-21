@@ -42,5 +42,10 @@ cd src
 python main.py
 ```
 
+## Note
+
+trackingデータを作成したモデルをipynb形式で`/model`に上げています。
+[Google Colab](https://colab.research.google.com/notebooks/welcome.ipynb?hl=ja)で試しみてください。
+
 ## License
 pedestrian-counter-demo is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
