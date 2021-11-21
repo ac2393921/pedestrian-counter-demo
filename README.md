@@ -1,5 +1,13 @@
 # Pedestrian Counter(歩行者カウント) Demo
 
+<div align="center">
+    <p>
+        <img src="data/gif/output_demo.gif" width="400"/> 
+    </p>
+</div>
+
+</div>
+
 ## Introduction
 
 社内でOpenCVを使用したアルゴリズムの具体例を提示するために作成した
