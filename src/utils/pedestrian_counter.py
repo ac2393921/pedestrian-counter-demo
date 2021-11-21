@@ -146,8 +146,6 @@ class PedestrianCounter:
         """
         for tracking in tracking_df.itertuples():
             cv2.rectangle(frame, (tracking.x, tracking.y), (tracking.x+tracking.w, tracking.y+tracking.h), (0, 255, 0), 2)
-            cv2.circle(frame, center=(int(tracking.center_x), int(tracking.y+tracking.h)), radius=10,
-                color=(77, 77, 77), thickness=-1, lineType=cv2.cv2.LINE_4)
 
     def plot_orbit(self, frame: np.ndarray, pedestrian: Pedestrian) -> None:
         """歩行者の軌道を描画する
